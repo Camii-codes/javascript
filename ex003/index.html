@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex001</title>
+    <style>
+        body {
+            font: normal 25px Arial;
+            background-color: rgb(56, 56, 206);
+            color: white;
+        }
+
+        h1 {
+            color: rgba(228, 228, 95, 0.652);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Meu primeiro script.</p>
+
+    <script>
+        let n1 = Number(window.prompt('Digite um número: ')); //Coversão String para Number. 
+        let n2 = Number(window.prompt('Digite outro número: ')); //Coversão String para Number.
+        let s = n1 + n2;
+        window.alert('A soma é igual a: ' + String(s)); //Conversão Number para String. (nesse caso não é necessário)
+    </script>
+</body>
+</html>
