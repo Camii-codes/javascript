@@ -16,10 +16,14 @@
     <h1>Iniciando estudos DOM</h1>
     <p>Aqui vai os resultados</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
-    <div>Clique em mim</div>
+    <div id = "msg">Clique em mim</div>
     <script>
-        let p1 = window.document.getElementsByTagName('p') [1];
-        document.write(p1.innerText);
+        let corpo = window.document.body;
+        let p1 = window.document.getElementsByTagName('p') [0];
+        /* document.write(p1.innerText); Texto que está dentro (sem modificações).
+        document.write(p1.innerHTML); Text que está dentro (com todas modificações como <strong> por ex). */ 
+        corpo.style.background = 'black';
+        p1.style.color = 'blue';
     </script>
 </body>
 </html>
