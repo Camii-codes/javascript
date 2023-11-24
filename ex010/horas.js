@@ -1,3 +1,7 @@
+/* Se quiser pegar a hora exata do momento:
+let agora = new Date();
+let hora = agora.getHours(); */
+
 let hora = 0;
 
 if (hora < 5) {
