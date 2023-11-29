@@ -30,6 +30,19 @@ function verificar() {
             }
         } else if (fsex[1].checked) {
             genero = 'Mulher';
+            if (idade >= 0 && idade < 10) {
+                // Criança 
+                img.setAttribute('src', 'imagens/foto-crianca-f.png');
+            } else if (idade < 21) {
+                // Jovem 
+                img.setAttribute('src', 'imagens/foto-jovem-f.png');
+            } else if (idade < 50) {
+                // Adulto 
+                img.setAttribute('src', 'imagens/foto-adulta-f.png');
+            } else {
+                // Idoso
+                img.setAttribute('src', 'imagens/foto-idosa-f.png');
+            }
         }
         res.style.textAlign = 'center';
         res.innerHTML = `Detectamos ${genero} com ${idade} anos`; 
