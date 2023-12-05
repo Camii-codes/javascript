@@ -1,6 +1,6 @@
 let c = 1;
 
 do {
-    console.log('Olá, mundo!');
+    console.log(`Passo ${c}`);
     c++
-} while (c <= 6)
+} while (c <= 7)
