@@ -1,5 +1,4 @@
-function contar(event) {
-    event.preventDefault();
+function contar() {
     let ini = window.document.getElementById('numi');
     let fim = window.document.getElementById('numf');
     let pass = window.document.getElementById('nump');
